@@ -8,6 +8,9 @@ services:
       - 3001:3000
     environment:
       - TZ=Asia/Shanghai
+      - SQL_DSN
+      - SESSION_SECRET
+      - REDIS_CONN_STRING
     volumes:
       - ./data:/data
       - /etc/localtime:/etc/localtime:ro
