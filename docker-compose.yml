@@ -14,3 +14,9 @@ services:
     volumes:
       - ./data:/data
       - /etc/localtime:/etc/localtime:ro
+    networks:
+      - dokploy-network   
+
+networks:
+  dokploy-network:
+    external: true       
